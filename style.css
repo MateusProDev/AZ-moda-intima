@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: #67B0B4;
+    color: #fff;
+}
+header {
+    background-color: #333;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+#line-header{
+    border: 3px solid #dd7600;
+    position: relative;
+    margin: -8px 0 -8px 0;
+}
+.logo img {
+    max-width: 100px;
+    height: 90px;
+    margin: -15px 0 -25px -10px;
+    filter: drop-shadow(4px 4px 4px #000);
+}
+
+.carrinho img {
+    max-width: 35px;
+    filter: drop-shadow(4px 4px 4px #000000b0);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos do menu de navegação */
+.pudim {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.pudim-line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 2px 0;
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .pudim {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links section {
+        width: 300px;
+    }
+
+    .pudim.mostrar-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    .pudim-line.mostrar-menu {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 2px 0;
+    }
+
+    .nav-links.mostrar-menu {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        color: #fff;
+        top: 85px;
+        right: 0px;
+        background-color: #333;
+        padding: 20px;
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.mostrar-menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #line-car{
+        margin-top: 20px;
+    }
+    .navs ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 0 0 -40px 0px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .navs ul li{
+        display: flex;
+    }
+    .navs li a{
+        color: #fff;
+    }
+    .navs li a:hover{
+        color: #dd7600;
+    }
+    .navs hr{
+        border: 1px solid #ccc;
+        height: 10px;
+        margin-top: 5px;
+    }
+}
+
+/* main content*/
+.banner{
+    height: 610px;
+}
+.banner img{
+    width: 100%;
+}
+.text-banner{
+    width: 100%;
+    padding: 0 40px;
+    text-align: center;
+    color: #dbdbdb;
+    text-shadow: 2px 2px 2px #3333;
+}
+.text-banner hr{
+    border: 10px solid #9C6C25;
+    margin: 80px -40px 0 -40px;
+}
+#line-banner{
+    border: none;
+    height: 50px;
+    background-color: #67B0B4;
+    margin: -25px 40px 0 40px;
+    border-radius: 4px 4px 4px 4px 100%;
+}
+.star {/* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
+    background-color: #cecece;
+    position: relative;
+    clip-path: polygon(50% 0%, 55.8% 45.2%, 100% 50%, 55.8% 55.8%, 50% 100%, 45.2% 55.8%, 0% 50%, 45.2% 45.2%);
+    margin: 50px; /* Apenas para espaçamento */
+    margin-top: -110px;
+}
+
+/* Estilos da seção nomes-e-fotos */
+.nomes-e-fotos {
+    height: 650px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #67B0B4;
+    color: #9C6C25;
+    margin-top: -5px;
+}
+
+.nomes-um {
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nomes-um hr {
+    border: 1px solid #9C6C25;
+    height: 200px;
+    margin: 10px;
+    margin-right: -20px;
+}
+.nomes-dois {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nomes-um ul {
+    list-style: none;
+    padding: 0;
+}
+.nomes-dois ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nomes-um li {
+    font-size: 24px;
+    margin-bottom: 10px;
+    writing-mode: vertical-lr; /* Texto na vertical */
+    text-orientation: upright; /* Mantém o texto na vertical */
+}
+
+.nomes-dois li {
+    font-size: 24px;
+    margin-bottom: 10px;
+    writing-mode: vertical-lr; /* Rotação vertical dos nomes */
+    text-orientation: upright; /* Mantém o texto na vertical */
+}
+
+.fotos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: right-center 1s ease-in-out forwards;
+}
+
+.fotos img {
+    width: 200px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+    margin-bottom: 10px;
+    opacity: 0; /* Começa com opacidade 0 para a animação de fade */
+    transform: translateX(100%); /* Começa fora da tela à direita */
+    box-shadow: 4px 4px 4px #333;
+    border-radius: 10px;
+}
+
+/* Defina os tempos de animação para cada imagem usando :nth-child */
+.fotos img:nth-child(1) {
+    animation: right-center 3s ease-in-out 0.5s forwards;
+}
+
+.fotos img:nth-child(2) {
+    animation: right-center 6s ease-in-out 1s forwards;
+}
+
+
+/* Animação do movimento da direita para o centro */
+@keyframes right-center {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*valores do produto*/
+
+.value-add-car{
+    position: absolute;
+    margin-top: 560px;
+}
+.box-value span{
+    font-size: 17px;
+    margin: 0 20px;
+}
+.box-value button{
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+    
+}
+
+/* Estilos para a seção do carrinho */
+.carinho_compras{
+    margin-left: auto;
+    margin-right: auto;
+}
+section.carrinho {
+    background-color: #fff7d4;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a lista de itens do carrinho */
+
+.carrinho-itens {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada item do carrinho */
+.carrinho-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.carrinho-item:last-child {
+    border-bottom: none; 
+}
+
+/* Estilos para o total do carrinho */
+.total-carrinho {
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para o botão Finalizar Compra */
+button.finalizar-compra-btn {
+    background-color: #9C6C25;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.finalizar-compra-btn:hover {
+    background-color: #555;
+}
+/*estrutura do value*/
+
+/*rodapé*/
+/* Estilos gerais para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #0376d4;
+}
+.footer-container ul{
+    list-style: none;
+    font-size: 20px;
+}
+.footer-container ul li a{
+    text-decoration: none;
+    margin: 10px 0;
+    color: #0376d4;
+}
+.rodape-menu li{
+    margin: 20px 0;
+}
+.rodape-menu li a:hover{
+    color: #9C6C25;
+}
+
+/* Estilos para as seções do rodapé */
+section {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para ícones de redes sociais */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Estilos para ícones de formas de pagamento */
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment-icons img {
+    max-width: 50px;
+    margin: 0 10px;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}

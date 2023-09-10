@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZ Moda Intima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="top" class="logo">
+            <a href="index.html"><img src="img/Logo_Az-remove.png" alt="Logo da Loja de Pudim"></a>
+        </div>
+        <nav>
+            <div class="carrinho">
+                <a href="#"><img src="img/bolsa-de-compras.png" alt="Carrinho de Compras"></a>
+            </div>
+            <div class="pudim">
+                <div class="pudim-line"></div>
+                <div class="pudim-line"></div>
+                <div class="pudim-line"></div>
+            </div>
+            <ul class="nav-links">
+                <section class="carinho_compras">
+                    <h2>Carrinho</h2>
+                    <div class="carrinho-itens" id="carrinho-tbody">
+                        <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+                    </div>
+                    <div class="total-carrinho">
+                        <strong>Total</strong>
+                        <span id="total-carrinho">R$0.00</span>
+                    </div>
+                    <button class="finalizar-compra-btn" type="button" onclick="finalizarCompra()">Finalizar Compra</button>
+                    <hr id="line-car">
+                    <nav class="navs">
+                        <ul>
+                            <li><a href="#fotos-inst">INICÍO</a></li>
+                            <hr>
+                            <li><a href="#videos">CONTATO</a></li> 
+                            <hr>
+                            <li><a href="#sobre-nos">SOBRE-NÓS</a></li> 
+                        </ul>
+                    </nav>
+                </section>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <div class="banner">
+                <img src="img/Logo Az.PNG" alt="">
+                <div class="text-banner">
+                    <h2>CONFIRA NOSSOS PRODUTOS</h2>
+                    <p>Peças disponiveis</p>
+                    <hr>
+                    <hr id="line-banner">
+                    <div class="star"></div>
+                </div>
+            </div>
+        </div>
+        <section class="nomes-e-fotos">
+            <div class="nomes-um">
+                <ul>
+                    <li>CAMISOLA S BOJO</li>
+                </ul>
+            </div>
+            <div class="nomes-um">
+                <hr>
+            </div>
+            <div class="nomes-dois">
+                <ul>
+                    <li>REF 10600</li>
+                </ul>
+            </div>
+            <div class="fotos">
+                <img src="img/PHOTO-2023-09-07-22-21-24 2.jpg" alt="Foto 1">
+                <img src="img/PHOTO-2023-09-07-22-21-24.jpg" alt="Foto 2">
+            </div>
+            <div class="value-add-car">
+                <div class="box-value">
+                    <span>R$ 49,99</span>
+                    <button type="button" onclick="adicionarAoCarrinho('REF. 10600', 49.99)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section class="nomes-e-fotos">
+            <div class="nomes-um">
+                <ul>
+                    <li>CAMISOLA S BOJO</li>
+                </ul>
+            </div>
+            <div class="nomes-um">
+                <hr>
+            </div>
+            <div class="nomes-dois">
+                <ul>
+                    <li>REF 10600</li>
+                </ul>
+            </div>
+            <div class="fotos">
+                <img src="img/PHOTO-2023-09-07-22-21-24 2.jpg" alt="Foto 1">
+                <img src="img/PHOTO-2023-09-07-22-21-24.jpg" alt="Foto 2">
+            </div>
+            <div class="value-add-car">
+                <div class="box-value">
+                    <span>R$ 49,99</span>
+                    <button type="button" onclick="adicionarAoCarrinho('REF. 10600', 49.99)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section class="nomes-e-fotos">
+            <div class="nomes-um">
+                <ul>
+                    <li>CAMISOLA S BOJO</li>
+                </ul>
+            </div>
+            <div class="nomes-um">
+                <hr>
+            </div>
+            <div class="nomes-dois">
+                <ul>
+                    <li>REF 10600</li>
+                </ul>
+            </div>
+            <div class="fotos">
+                <img src="img/PHOTO-2023-09-07-22-21-24 2.jpg" alt="Foto 1">
+                <img src="img/PHOTO-2023-09-07-22-21-24.jpg" alt="Foto 2">
+            </div>
+            <div class="value-add-car">
+                <div class="box-value">
+                    <span>R$ 49,99</span>
+                    <button type="button" onclick="adicionarAoCarrinho('REF. 10600', 49.99)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section class="nomes-e-fotos">
+            <div class="nomes-um">
+                <ul>
+                    <li>CAMISOLA S BOJO</li>
+                </ul>
+            </div>
+            <div class="nomes-um">
+                <hr>
+            </div>
+            <div class="nomes-dois">
+                <ul>
+                    <li>REF 10600</li>
+                </ul>
+            </div>
+            <div class="fotos">
+                <img src="img/PHOTO-2023-09-07-22-21-24 2.jpg" alt="Foto 1">
+                <img src="img/PHOTO-2023-09-07-22-21-24.jpg" alt="Foto 2">
+            </div>
+            <div class="value-add-car">
+                <div class="box-value">
+                    <span>R$ 49,99</span>
+                    <button type="button" onclick="adicionarAoCarrinho('REF. 10600', 49.99)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+        <section class="nomes-e-fotos">
+            <div class="nomes-um">
+                <ul>
+                    <li>CAMISOLA S BOJO</li>
+                </ul>
+            </div>
+            <div class="nomes-um">
+                <hr>
+            </div>
+            <div class="nomes-dois">
+                <ul>
+                    <li>REF 10600</li>
+                </ul>
+            </div>
+            <div class="fotos">
+                <img src="img/PHOTO-2023-09-07-22-21-24 2.jpg" alt="Foto 1">
+                <img src="img/PHOTO-2023-09-07-22-21-24.jpg" alt="Foto 2">
+            </div>
+            <div class="value-add-car">
+                <div class="box-value">
+                    <span>R$ 49,99</span>
+                    <button type="button" onclick="adicionarAoCarrinho('REF. 10600', 49.99)">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="rodape-menu">
+                <ul>
+                    <li><a href="#top">Inicio</a></li>
+                    <li><a href="#">Sobre-nós</a></li>
+                    <li><a href="#">politicas-privacidade</a></li>
+                </ul>
+            </section>
+            <section id="redes-sociais">
+                <h2>Redes Sociais</h2>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"><img src="#" alt="redes-sociais"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"><img src="#" alt="redes-sociais"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"><img src="#" alt="redes-sociais"></i></a></li>
+                </ul>
+            </section>
+            <section id="bandeiras-pagamento">
+                <h2>Formas de Pagamento</h2>
+                <div class="payment-icons">
+                    <img src="visa.png" alt="Visa">
+                    <img src="mastercard.png" alt="Mastercard">
+                    <img src="paypal.png" alt="PayPal">
+                </div>
+            </section>
+        </div>
+        <p class="copyright">AZ Moda Intima &copy; 2023 | Todos os Direitos Reservados</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
